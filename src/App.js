@@ -1,23 +1,26 @@
 import logo from './logo.svg';
+import Image from './image.jpg'
 import './App.css';
+import Welcome from './Welcome';
+import Name from './Name'
+import Greeting from './Greeting';
+import MyForm from './myForm';
+import ProfileCard from './profileCard';
+import LoginForm from './loginForms'
+import Increment from './increment'
+import TaskManagement from './TaskManagement';
+import AppUseContext from './appUseContext';
+import Counter from './counter';
+import Input from './input';
+import useFetch from './useFetch';
+import UserDetails from './userDetails';
+import LaunchTracker from './launchTracker';
 
 function App() {
+  const data = useFetch()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TaskManagement />
     </div>
   );
 }
